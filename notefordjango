@@ -1,0 +1,17 @@
+NOTE
+
+TUTORIAL #2 (3/1/2023)
+In-dev knowledge::
+    - path()
+    - database backend setup => postgreSQL, sqlite, mysql, oracle, etc.
+    - migrate command: create database tables according to the database settings, or any necessary db for apps, in mysit/settings.py
+        => make migrations to let Django knows that the apps are changed in the models, and let it automatically manage the database schema
+        => always check using manage.py check 
+        ==> three-step guide: change models models.py -> create migrations for the change -> apply the changes to the database
+    - Interacting with API using "py manage.py shell"   
+    - Explore the Database API in the shell with command
+    - __str__()
+    
+
+Issues during developing:
+    - why changing name of the module 'mysit' affects the total run
