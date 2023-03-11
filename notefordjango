@@ -3,6 +3,7 @@ NOTE
 TUTORIAL #2 (3/1/2023)
 In-dev knowledge::
     - path()
+    - relationship between urls, view, and po
     - database backend setup => postgreSQL, sqlite, mysql, oracle, etc.
     - migrate command: create database tables according to the database settings, or any necessary db for apps, in mysit/settings.py
         => make migrations to let Django knows that the apps are changed in the models, and let it automatically manage the database schema
@@ -15,3 +16,13 @@ In-dev knowledge::
 
 Issues during developing:
     - why changing name of the module 'mysit' affects the total run
+
+TUTORIAL #3 (3/1/2023)
+In-dev knowledge:
+    - "view" : type of webpage in Django application that generally serves a function and has a specific template. => a URL pattern will be embdedded for each view
+    - namespacing: by putting those templates inside another directory named for the application itself. -> prevents confusion if Django were to track 2 templates with the same name. different directories.
+    - render function:  takes the request object as its first argument, a template name as its second argument and a dictionary as its optional third argument. It returns an HttpResponse object of the given template rendered with the given context.
+
+Issues during developing:
+    - polls/34, poll/34/results, etc. all led to a 404 error
+    -
